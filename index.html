@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success | Analytics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap');
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+        }
+
+        .nav-link {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .nav-link:hover {
+            color: #3b82f6;
+            transform: translateY(-2px);
+        }
+
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #60a5fa);
+            background-clip: text;           /* Standard property */
+            -webkit-background-clip: text;   /* Для Safari и старых браузеров */
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200">
+    <!-- Navbar -->
+    <nav class="bg-slate-950 border-b border-slate-800 fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 bg-blue-600 rounded-2xl flex items-center justify-center text-white font-bold text-2xl">S</div>
+                <span class="text-3xl font-semibold tracking-tighter heading-font">Success</span>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-10 text-sm font-medium">
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#insights" class="nav-link">Insights</a>
+                <a href="#careers" class="nav-link">Careers</a>
+            </div>
+            
+            <div class="flex items-center gap-4">
+                <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })"
+                        class="px-6 py-2.5 text-sm font-medium border border-slate-700 hover:border-blue-500 rounded-2xl transition-colors">
+                    Contact
+                </button>
+                <button onclick="document.getElementById('careers').scrollIntoView({ behavior: 'smooth' })"
+                        class="px-6 py-2.5 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-2xl transition-all active:scale-95">
+                    Submit Resume
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-bg pt-32 pb-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="inline-flex items-center gap-2 bg-slate-900 border border-blue-900 rounded-3xl px-5 py-2 text-sm">
+                        <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+                        Data-Driven Excellence
+                    </div>
+                    
+                    <h1 class="text-6xl md:text-7xl font-bold leading-tight heading-font">
+                        Turn data into<br>
+                        <span class="gradient-text">unstoppable success</span>
+                    </h1>
+                    
+                    <p class="text-xl text-slate-400 max-w-md">
+                        We transform complex data into clear insights that drive strategic decisions and accelerate business growth.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <button onclick="document.getElementById('careers').scrollIntoView({ behavior: 'smooth' })"
+                                class="px-8 py-4 bg-blue-600 hover:bg-blue-500 text-lg font-semibold rounded-3xl transition-all active:scale-95 flex items-center gap-3">
+                            Submit Resume
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        
+                        <button onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' })"
+                                class="px-8 py-4 border border-slate-600 hover:border-slate-400 text-lg font-medium rounded-3xl transition-all">
+                            Explore Services
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <img src="https://picsum.photos/id/1015/800/620" 
+                         alt="Analytics Dashboard"
+                         class="rounded-3xl shadow-2xl border border-slate-700">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="py-28 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-6xl md:text-7xl font-bold leading-tight heading-font text-white">
+                    We believe in the power of data to
+                </h2>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6 mt-8">
+                    <div class="w-96 h-6 bg-blue-500 rounded"></div>
+                    <div class="w-64 h-6 bg-blue-400 rounded"></div>
+                </div>
+                <h2 class="text-6xl md:text-7xl font-bold leading-tight heading-font mt-8 text-white">
+                    create <span class="gradient-text">extraordinary outcomes</span>
+                </h2>
+            </div>
+
+            <div class="max-w-3xl mx-auto text-center text-lg text-slate-300 mt-12">
+                <p>
+                    Success was founded with a simple mission: to help ambitious organizations harness the full potential of their data. 
+                    Today, we're a team of passionate analysts, data scientists, and strategists delivering world-class analytics solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-28">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="px-5 py-2 bg-slate-800 rounded-full text-sm font-medium">WHAT WE DO</span>
+                <h2 class="text-5xl font-semibold heading-font mt-6">Analytics that drive real results</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 card-hover">
+                    <div class="w-14 h-14 bg-blue-500/10 text-blue-400 rounded-2xl flex items-center justify-center text-3xl mb-8">📊</div>
+                    <h3 class="text-2xl font-semibold mb-3">Business Intelligence</h3>
+                    <p class="text-slate-400">Custom dashboards and reporting systems that give you complete visibility into your business performance.</p>
+                </div>
+                
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 card-hover">
+                    <div class="w-14 h-14 bg-purple-500/10 text-purple-400 rounded-2xl flex items-center justify-center text-3xl mb-8">🔮</div>
+                    <h3 class="text-2xl font-semibold mb-3">Predictive Analytics</h3>
+                    <p class="text-slate-400">Forecast trends, identify opportunities, and mitigate risks before they happen.</p>
+                </div>
+                
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 card-hover">
+                    <div class="w-14 h-14 bg-amber-500/10 text-amber-400 rounded-2xl flex items-center justify-center text-3xl mb-8">🚀</div>
+                    <h3 class="text-2xl font-semibold mb-3">Data Strategy</h3>
+                    <p class="text-slate-400">End-to-end data transformation consulting to build a data-driven culture.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers -->
+    <section id="careers" class="py-28 bg-slate-900">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-5xl font-semibold heading-font">Join our mission</h2>
+            <p class="mt-6 text-xl text-slate-400">
+                We're always looking for talented people who are passionate about data and want to make a real impact.
+            </p>
+            
+            <div class="mt-12 bg-slate-950 border border-slate-700 rounded-3xl p-12">
+                <button onclick="alert('Thank you! Our careers page would open here in a real website.')"
+                        class="w-full py-6 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white text-xl font-semibold rounded-3xl transition-all active:scale-[0.97]">
+                    Submit Your Resume
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-20">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="flex items-center justify-center gap-3 mb-6">
+                <div class="w-9 h-9 bg-blue-600 rounded-2xl flex items-center justify-center text-white font-bold text-2xl">S</div>
+                <span class="text-3xl font-semibold tracking-tighter heading-font">Success</span>
+            </div>
+            <p class="text-slate-400">Making data work harder so you can focus on what matters most.</p>
+            <div class="border-t border-slate-800 mt-12 pt-8 text-sm text-slate-500">
+                © 2026 Success Analytics. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
